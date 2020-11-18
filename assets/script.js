@@ -31,7 +31,7 @@ const quizQuestions = [
   },
 ];
 
-const startBtn = document.querySelector("#qstart-btn");
+const startBtn = document.querySelector("qstart-btn");
 startBtn.addEventListener("click", startQuiz);
 
 function startQuiz() {
