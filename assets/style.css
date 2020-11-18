@@ -25,20 +25,18 @@ body {
   font-family: sans-serif;
   font-style: normal;
   font-weight: bolder;
-  background-color: #f9fbfd;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b7bbbe;
   background-size: cover;
-  background-image: url("../images/pexels-jessica-lewis-583848.jpg");
-}
-
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 header {
   font-size: x-large;
   text-align: center;
+  justify-content: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(210, 29%, 97%);
@@ -52,12 +50,12 @@ header {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  box-shadow: 0 0 8px 2px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 30px;
 }
 
 .card-header::after {
@@ -114,14 +112,19 @@ header {
   text-align: center;
 }
 
+.h4-center {
+  text-align: center;
+}
+
 /* 
   - sets the buttons styles (color, size, etc.)
 */
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(8, 86, 175);
   border-radius: 25px;
+  border-color: black;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
@@ -135,76 +138,18 @@ header {
   width: 17rem;
 }
 
+.btn-layout {
+  display: grid;
+  grid-template-rows: auto;
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
-.float-right {
-  float: right;
-}
-
-/*
-  - sets the passwrod text box
-*/
-
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
-}
-
-@media (max-width: 690px) {
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
-  }
-
-  #password {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
-  }
-}
-
-.label {
-  display: block;
-  padding-left: 15px;
-  text-indent: -15px;
-}
-
-.input {
-  width: 15px;
-  height: -15px;
-  padding: 0;
-  margin: 0;
-  vertical-align: right;
-  position: relative;
-  top: -1px;
-}
-
-.mchoice {
-
-justify-content: center;
+.start-next-end-btn{
+display: grid;
+grid-template-columns: repeat(3);
 
 }

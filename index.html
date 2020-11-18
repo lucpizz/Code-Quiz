@@ -26,37 +26,50 @@
 
 </head>
 
-<main>
+<body>
 
+    <h2 class="h2-center">Code Quiz</h2>
 
-    <div class="card">
+    <h4 class="h4-center">Quiz Rules:</h4>
 
-        <h2 class="h2-center">Code Quiz</h2>
-  
+    <ol class="ol-rules">
+        <li>Rule 1</li>
+        <li>Rule 2</li>
+        <li>Rule 3</li>
+      </ol> 
+
         <!-- creates a form for the quiz questions and buttons-->
 
+    <div class="card" class="hide">  
+
+        <div id="questions">Questions:</div>
+
+        <div id="choice-btn" class="btn-layout">
+
+            <button class="btn">Choice 1</button>
+            <button class="btn">Choice 2</button>
+            <button class="btn">Choice 3</button>
+            <button class="btn">Choice 4</button>
+           
+        </div>
+   
+   
+        <div class="start-next-end-btn">
+            <button id="qstart-btn" class="start-quiz-btn btn">Start Quiz</button>
+            <button id="qnext-tn" class="next-question-btn btn">Next Question</button>
+            <button id="qend-btn" class="end-quiz-btn btn">End Quiz</button>
+        </div>
+
+    </div>
         
-  
-        <form class="form-input flex" aria-label="Box for questions">
-
-        
-       
-              
-
-            <div class="card-footer">
-                <button id="start-quiz" class="btn">Start Quiz</button>
-                <button id="end-quiz" class="btn">End Quiz</button>
-              </div>
-
-  
-        </form>
-  
+   
     <!-- sets the JavaScript file location for Code Quiz -->
 
+     </div>
     
     <script> src = "./assets/script.js"</script>
 
-</main>
+</body>
 
 
 </html>
