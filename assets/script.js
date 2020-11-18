@@ -7,7 +7,7 @@ const quizQuestions = [
       3: "Hartford",
       4: "Montreal",
     },
-    correctAnswer: "c",
+    correctAnswer: "3",
   },
   {
     question: "What is the capitol of Florida?",
@@ -17,7 +17,7 @@ const quizQuestions = [
       3: "Tallahassee",
       4: "California",
     },
-    correctAnswer: "c",
+    correctAnswer: "3",
   },
   {
     question: "What is the capitol of New York?",
@@ -27,11 +27,11 @@ const quizQuestions = [
       3: "Los Angels",
       4: "Tampa Bay",
     },
-    correctAnswer: "b",
+    correctAnswer: "2",
   },
 ];
 
-const startBtn = document.querySelector("qstart-btn");
+const startBtn = document.getElementById("qstart-btn");
 startBtn.addEventListener("click", startQuiz);
 
 function startQuiz() {

@@ -14,7 +14,7 @@ header {
   justify-content: center;
   padding: 20px;
   padding-top: 0px;
-  color: black
+  color: black;
 }
 
 .h1-center {
@@ -57,7 +57,7 @@ body {
   max-width: 800px;
   max-width: 80%;
   padding: 15px;
-  }
+}
 
 .btn {
   border: black;
