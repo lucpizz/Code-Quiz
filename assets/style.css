@@ -8,139 +8,78 @@
   box-sizing: border-box;
 }
 
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/*  
-  - sets the overall background on web page
-  - link to background photo - pexels-jessica-lewis-583848.jpg 
-*/
-
-body {
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: bolder;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #b7bbbe;
-  background-size: cover;
-}
-
 header {
-  font-size: x-large;
+  font-size: 5rem;
   text-align: center;
   justify-content: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(210, 29%, 97%);
+  color: black
+}
+
+.h1-center {
+  text-align: center;
+  font-size: xx-large;
+  color: #111111;
+  padding: 10px;
+}
+
+.div-rules {
+  text-align: center;
+  font-size: 2rem;
+  color: #111111;
+  padding: 10px;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*  
   - sets the cards sytle (color, size, border shadow, etc.)
 */
 
-.card {
-  background-color: hsl(0, 0%, 100%);
+.container {
+  background-color: white;
   border-radius: 5px;
-  border-width: 1px;
-  box-shadow: 0 0 8px 2px;
-  color: hsl(206, 17%, 28%);
+  box-shadow: 0 0 5px 5px;
   font-size: 18px;
-  margin: 0 auto;
   max-width: 800px;
-  padding: 30px;
-}
-
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-body {
-  min-height: 100px;
-}
-
-.card-footer {
-  text-align: center;
-}
-
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-/*
-  - sets the form within the card for password size and characters checkbox
-*/
-
-.form-input {
-  display: flex;
-  flex-direction: column;
-  display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 1rem;
-  column-gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-
-/*
-  - aligns the h2 header to the center in the card
-*/
-
-.h2-center {
-  text-align: center;
-}
-
-.h4-center {
-  text-align: center;
-}
-
-/* 
-  - sets the buttons styles (color, size, etc.)
-*/
+  max-width: 80%;
+  padding: 15px;
+  }
 
 .btn {
-  border: none;
-  background-color: rgb(8, 86, 175);
+  border: black;
+  background-color: darkblue;
   border-radius: 25px;
   border-color: black;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
+  box-shadow: 5px 5px 5px 5px;
+  color: white;
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
+  padding: 10px 10px;
   text-align: center;
   cursor: pointer;
   width: 17rem;
 }
 
+.choice-btn {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
 .btn-layout {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
 }
 
 button[disabled] {
@@ -148,8 +87,9 @@ button[disabled] {
   background: #c0c7cf;
 }
 
-.start-next-end-btn{
-display: grid;
-grid-template-columns: repeat(3);
-
+.start-next-end-btn {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  margin: 20px 0;
 }

@@ -15,8 +15,6 @@
 
     <!-- sets the location of the Bootstrap and CSS style sheet used for the webpage -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assets/style.css" />
 
@@ -28,45 +26,54 @@
 
 <body>
 
-    <h2 class="h2-center">Code Quiz</h2>
+    <header>Code Quiz</header>
 
-    <h4 class="h4-center">Quiz Rules:</h4>
+    <div class=".div-rules">
 
-    <ol class="ol-rules">
-        <li>Rule 1</li>
-        <li>Rule 2</li>
-        <li>Rule 3</li>
-      </ol> 
+        <h4>Quiz Rules:</h4>
 
-        <!-- creates a form for the quiz questions and buttons-->
+        <ol>
+            <li>Rule 1</li>
+            <li>Rule 2</li>
+            <li>Rule 3</li>
+        </ol>
 
-    <div class="card" class="hide">  
+    </div>
 
-        <div id="questions">Questions:</div>
+    <!-- creates a form for the quiz questions and buttons-->
 
-        <div id="choice-btn" class="btn-layout">
+    <div class="container">
 
-            <button class="btn">Choice 1</button>
-            <button class="btn">Choice 2</button>
-            <button class="btn">Choice 3</button>
-            <button class="btn">Choice 4</button>
-           
-        </div>
-   
-   
-        <div class="start-next-end-btn">
-            <button id="qstart-btn" class="start-quiz-btn btn">Start Quiz</button>
-            <button id="qnext-tn" class="next-question-btn btn">Next Question</button>
-            <button id="qend-btn" class="end-quiz-btn btn">End Quiz</button>
+        <div id="questions-container" class="hide">
+
+                 <div id="questions">Questions:</div>
+
+                <div id="choice-btn" class="btn-layout">
+
+                    <button class="btn">Choice 1</button>
+                    <button class="btn">Choice 2</button>
+                    <button class="btn">Choice 3</button>
+                    <button class="btn">Choice 4</button>
+                    
+                </div>
+        
+
+
+                <div class="start-next-end-btn">
+                    <button id="qstart-btn" class="start-quiz-btn btn">Start Quiz</button>
+                    <button id="qnext-btn" class="next-question-btn btn">Next Question</button>
+                    <button id="qend-btn" class="end-quiz-btn btn">End Quiz</button>
+                </div>
+
         </div>
 
     </div>
-        
-   
+
+
     <!-- sets the JavaScript file location for Code Quiz -->
 
-     </div>
-    
+    </div>
+
     <script> src = "./assets/script.js"</script>
 
 </body>
