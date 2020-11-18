@@ -41,6 +41,10 @@ body {
   height: 100vh;
 }
 
+.column {
+  align-items: center;
+}
+
 /*  
   - sets the cards sytle (color, size, border shadow, etc.)
 */
@@ -70,26 +74,16 @@ body {
   width: 17rem;
 }
 
-.choice-btn {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-}
-
 .btn-layout {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   margin: 20px 0;
-}
-
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
 }
 
 .start-next-end-btn {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  margin: 20px 0;
 }
