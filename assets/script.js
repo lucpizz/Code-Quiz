@@ -128,6 +128,8 @@ function displayQuestions() {
     }
     answers.append(e);
   });
+
+  setTime();
 }
 
 /* Cycles through the questions */
@@ -144,26 +146,24 @@ function resetQuiz() {
   location.reload();
 }
 
-/*
-
 var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
 
 var secondsLeft = 10;
 
 function setTime() {
-  var timerInterval = setInterval(function() {
+  var timerInterval = setInterval(function () {
     secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+    // timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
 
-    if(secondsLeft === 0) {
+    if (secondsLeft === 0) {
       clearInterval(timerInterval);
-      sendMessage();
+      //sendMessage();
     }
-
-  }, 1000);
+  }, 500);
 }
 
+/*
 function sendMessage() {
   timeEl.textContent = " ";
 
