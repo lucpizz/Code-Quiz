@@ -29,12 +29,29 @@ let quizQuestions = [
     },
     correctAnswer: "B",
   },
+  {
+    question: "What is the capitol of Arizona?",
+    answers: {
+      A: "London",
+      B: "Toronto",
+      C: "Atlanta",
+      D: "Phoenix",
+    },
+    correctAnswer: "D",
+  },
+  {
+    question: "What is the capitol of New Mexico?",
+    answers: {
+      A: "Santa Fe",
+      B: "Sedona",
+      C: "Dublin",
+      D: "San Jose",
+    },
+    correctAnswer: "A",
+  },
 ];
 
 var questions = document.getElementById("questions");
-
-console.log(questions);
-
 var displayedQuestion = {};
 var playerScore = 0;
 var playerAnswers = false;
@@ -54,6 +71,8 @@ nextBtn.addEventListener("click", nextQuestion);
 var resetBtn = document.getElementById("qend-btn");
 resetBtn.addEventListener("click", resetQuiz);
 
+/* Check Answer Functions */
+
 function check_answer(e) {
   if (e.target.className.includes("correct")) {
     Correct_Answer += 1;
@@ -64,6 +83,9 @@ function check_answer(e) {
   }
   displayQuestions();
 }
+
+/* Start the Quiz Functions */
+
 function startQuiz() {
   console.log("Started");
 
@@ -73,6 +95,8 @@ function startQuiz() {
 
   displayQuestions();
 }
+
+/* display the questions function */
 
 function displayQuestions() {
   document.getElementById(
@@ -106,9 +130,15 @@ function displayQuestions() {
   });
 }
 
+/* Cycles through the questions */
+
 function nextQuestion() {
+  questionsArray = [...quizQuestions];
+
   displayQuestions();
 }
+
+/* resets the quiz */
 
 function resetQuiz() {
   location.reload();
@@ -146,3 +176,4 @@ function sendMessage() {
 
 setTime();
 
+*/

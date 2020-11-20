@@ -61,11 +61,26 @@ body {
 
 .btn {
   border: black;
-  background-color: darkblue;
+  background-color: gray;
   border-radius: 25px;
   border-color: black;
   box-shadow: 5px 5px 5px 5px;
   color: white;
+  font-size: 22px;
+  line-height: 22px;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 17rem;
+}
+
+button {
+  border: black;
+  background-color: white;
+  border-radius: 25px;
+  border-color: black;
+  box-shadow: 5px 5px 5px 5px;
+  color: black;
   font-size: 22px;
   line-height: 22px;
   padding: 10px 10px;
@@ -86,4 +101,23 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.score {
+  border: black;
+  background-color: white;
+  border-radius: 25px;
+  border-color: black;
+  box-shadow: 5px 5px 5px 5px;
+  color: black;
+  font-size: 22px;
+  line-height: 22px;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 5rem;
+}
+
+.upperRight {
+  float: right;
 }
