@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+/*
+    provides design elemnts to the header aspects of index.html
+*/
+
 header {
   font-size: 5rem;
   text-align: center;
@@ -31,6 +35,10 @@ header {
   padding: 10px;
 }
 
+/*
+    this style.css file adds specs to the index.html (Code Quiz)
+*/
+
 body {
   justify-content: center;
   align-items: center;
@@ -46,7 +54,7 @@ body {
 }
 
 /*  
-  - sets the cards sytle (color, size, border shadow, etc.)
+  - sets the container card sytle (color, size, border shadow, etc.)
 */
 
 .container {
@@ -58,6 +66,10 @@ body {
   max-width: 80%;
   padding: 15px;
 }
+
+/*
+    provides design elemnts to the buttons of the index.html
+*/
 
 .btn {
   border: black;
@@ -102,6 +114,10 @@ button {
   align-items: center;
   gap: 10px;
 }
+
+/*
+    provides design elemnts to the score aspect of index.html
+*/
 
 .score {
   border: black;

@@ -1,3 +1,5 @@
+/* JavaScript array to store the questions for the quiz */
+
 let quizQuestions = [
   {
     question: "What is the capitol of Connecticut?",
@@ -51,6 +53,8 @@ let quizQuestions = [
   },
 ];
 
+/* variables for the quiz application */
+
 var questions = document.getElementById("questions");
 var displayedQuestion = {};
 var playerScore = 0;
@@ -61,7 +65,10 @@ var secondsLeft = 120;
 
 var Correct_Answer = 0;
 var Wrong_Answer = 0;
-var Total_Questions = 3;
+
+var mainEl = document.getElementById("main");
+
+/* adds interaction listeners to the buttons on the webpage */
 
 var startBtn = document.getElementById("qstart-btn");
 startBtn.addEventListener("click", startQuiz);
@@ -72,7 +79,7 @@ nextBtn.addEventListener("click", nextQuestion);
 var resetBtn = document.getElementById("qend-btn");
 resetBtn.addEventListener("click", resetQuiz);
 
-/* Check Answer Functions */
+/* Check Answer Function */
 
 function check_answer(e) {
   if (e.target.className.includes("correct")) {
@@ -101,7 +108,15 @@ function startQuiz() {
   displayQuestions();
 }
 
-/* display the questions function */
+/*  display the questions function
+    randomly selects quetions
+    displays questions and answers
+    condional to end quiz
+    inact the endQuiz function
+    loop to cycle through quesitons
+    splice to remove question once answered
+
+*/
 
 function displayQuestions() {
   document.getElementById(
@@ -118,11 +133,7 @@ function displayQuestions() {
 
   displayedQuestion = questionsArray[questionList];
 
-  console.log(displayedQuestion);
-
   questions.innerText = `Question: ${displayedQuestion.question}`;
-
-  //var choices = quizQuestions[questionList].answers;
 
   var choices = displayedQuestion.answers;
 
@@ -135,7 +146,6 @@ function displayQuestions() {
     });
 
     if (choice == displayedQuestion.correctAnswer) {
-      //console.log(`Found: ${choice}`);
       e.className += "correct";
     }
     answers.append(e);
@@ -147,9 +157,7 @@ function displayQuestions() {
     console.log(" end ");
   }
 
-  //quizQuestions.splice(questionList, 1);
   endQuiz();
-  //displayedQuestion.splice(questionList, 1);
 }
 
 /* Cycles through the questions */
@@ -166,7 +174,7 @@ function resetQuiz() {
   location.reload();
 }
 
-var mainEl = document.getElementById("main");
+/* sets the time for the quiz and countdown */
 
 function setTime() {
   var timerInterval = setInterval(function () {
@@ -181,13 +189,14 @@ function setTime() {
   }, 1000);
 }
 
+/* ends the quiz */
+
 function endQuiz() {
   for (var i = 0; i < quizQuestions.length; i++)
     if (questionsArray[i] <= 0) {
       questions.innerText = "<h1>The Quiz has Ended!</h1>";
     }
   result = false;
-  console.log(result);
 }
 
 /* Function quizScore calculates and displays players quiz score */
