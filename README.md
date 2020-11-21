@@ -13,11 +13,10 @@ HTML, CCS, and JavaScript: Quiz App
 This project is using HTML, CSS, and JavaScript to create a multiple choice quiz application.
 
 - Provide an option to start the quiz (included next questions and reset quiz features)
+- Quiz cycles through the questions
 - Timer counter 2-minutes
 - Tracks correct and wrong answers
 - Track score and calculate
-- Provided the option to enter password length (range 8 to 128 characters)
-- Buttons to both generate password and/or copy new password to computer clipboard
 
 ---
 
