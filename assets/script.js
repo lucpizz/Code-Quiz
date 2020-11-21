@@ -109,8 +109,14 @@ function displayQuestions() {
 
   setTime();
 
-  var questionList = Math.floor(Math.random() * questionsArray.length);
+
+
+ var questionList = Math.floor(Math.random() * questionsArray.length);
+
+
   displayedQuestion = questionsArray[questionList];
+
+  
 
   questions.innerText = `Question: ${displayedQuestion.question}`;
 
@@ -130,6 +136,9 @@ function displayQuestions() {
     }
     answers.append(e);
   });
+  
+  //displayedQuestion.splice(questionList, 1);
+  
 }
 
 /* Cycles through the questions */
@@ -157,11 +166,39 @@ function setTime() {
     mainEl.textContent = secondsLeft + " Seconds Left.";
 
     if (secondsLeft === 0) {
-      clearInterval(timerInterval);
-      //sendMessage();
+     endQuiz();
     }
   }, 1000);
 }
+
+function endQuiz() {
+
+  
+for ( var i = 0; i < quizQuestions.length; i++)
+
+if (questionsArray[i] <= 0) {
+
+  questions.innerText = '<h1>The Quiz has Ended!</h1>';
+}
+result = false;
+console.log(result);
+
+}
+
+/* Function quizScore calculates and displays players quiz score */
+
+function quizScore() {
+
+  var correctQuestions = 10;
+  var quizResult = '<h1>Your score is:</h1>';
+  var playerScore = correctQuestions + Correct_Answer;
+
+  questions.innerText = quizResult + playerScore;
+
+
+}
+
+
 
 /*
 function sendMessage() {
