@@ -4,7 +4,6 @@ Actions to complete:
 
 - End quiz after cycling through questions
 - Time subtracted when clock for incorrect answers
-- Display high-score page
 
 # US State Capitol Quiz
 
