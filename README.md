@@ -37,10 +37,10 @@ This project is using HTML, CSS, and JavaScript to create a multiple choice quiz
 
 ## Webpages
 
-- [About Webpage - https://lucpizz.github.io/Password-Generator/index.html](https://lucpizz.github.io/Password-Generator/index.html)
+- [About Webpage - https://lucpizz.github.io/Code-Quiz/index.html](https://lucpizz.github.io/Code-Quiz/index.html)
 
 ---
 
 ## Image of the Webpage
 
-![Screenshot of Password Generator webpage](/images/GeneratePassword.png)
+![Screenshot of Quiz App webpage](/images/quiz.png)
