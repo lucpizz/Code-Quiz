@@ -4,7 +4,7 @@ Actions to complete:
 
 - End quiz after cycling through questions
 - Time subtracted when clock for incorrect answers
-- Display highscore page
+- Display high-score page
 
 # US State Capitol Quiz
 
@@ -23,11 +23,11 @@ This project is using HTML, CSS, and JavaScript to create a multiple choice quiz
 ## Site Structure
 
 1. HTML webpages
-   - Index.html - Quiz Applciaton main webpage
+   - Index.html - Quiz Application on main webpage
 2. Asset directory
 
    - CSS file - attributes to the design of the webpage
-   - Javascript file - adds the functionality to the Quiz Application
+   - JavaScript file - adds the functionality to the Quiz Application
 
 3. Images directory
    - Screenshot of webpage, Quiz Application
